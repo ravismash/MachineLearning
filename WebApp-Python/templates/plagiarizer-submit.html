@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>Plagiarism Defender</title>
+    </head>
+    <body>
+        <h1>Check Your Text for Plagiarism</h1>
+        <form method="post" action="{{ url_for('IsItPlagiarized') }}">
+            <label for="text_to_check">Enter text to check for plagiarism:</label>
+            <BR><textarea cols="80" rows="10" name="text_to_check"></textarea>
+            <BR><input type="submit" />
+         </form>
+    </body>
+</html>
